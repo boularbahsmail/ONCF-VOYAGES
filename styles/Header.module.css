@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.userAvatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+}
+
+.switchLanguageButton {
+  background-color: transparent;
+  padding: 0 10px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switchLanguageButtonText {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4fdaa9;
+}

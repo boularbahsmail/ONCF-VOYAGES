@@ -1,0 +1,56 @@
+.card {
+  background-color: #20d188;
+  border-radius: 20px;
+  padding: 10px 0 0 0;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.sayingHi {
+  color: #2f0482;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.userFullName {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 900;
+  color: #2f0482;
+}
+
+.booking {
+  background-color: #45e1a0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.bookingButton {
+  background-color: #2f0482;
+  padding: 10px;
+  border-radius: 100px;
+  width: 100%;
+}
+
+.bookingButtonText {
+  color: #45e1a0;
+  text-align: center;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+.viewTicketsButton {
+  padding-top: 15;
+}
+
+.viewTicketsButtonText {
+  color: #2f0482;
+  font-size: 17px;
+}

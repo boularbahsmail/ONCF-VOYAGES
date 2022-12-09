@@ -9,10 +9,14 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "babel-plugin-react-native-classname-to-style": "^1.2.2",
+    "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
     "expo": "~47.0.8",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
-    "react-native": "0.70.5"
+    "react-native": "0.70.5",
+    "react-native-css-transformer": "^1.2.4",
+    "react-native-paper": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

@@ -1,35 +1,27 @@
-import { StyleSheet, View, Text } from "react-native";
+import { View, Text, Pressable } from "react-native";
+import styles from "../../styles/WelcomingCard.module.css";
 
-const WelcomingCard = () => {
+const WelcomingCard = ({ language }) => {
   return (
     <View style={styles.card}>
-        <View>
-            <Text style={styles.sayingHi}>Good Evening</Text>
-            <Text style={styles.userFullName}>Ismail Boularbah</Text>
-        </View>
+      <View>
+        <Text style={styles.sayingHi}>
+          {language == "EN" ? "Good Evening" : "Bonsoir"}
+        </Text>
+        <Text style={styles.userFullName}>Ismail Boularbah</Text>
+      </View>
+      <View style={styles.booking}>
+        <Pressable style={styles.bookingButton}>
+          <Text style={styles.bookingButtonText}>
+            {language == "EN" ? "I book a ticked" : "Je réserve un billet"}
+          </Text>
+        </Pressable>
+        <Pressable style={styles.viewTicketsButton}>
+          <Text style={styles.viewTicketsButtonText}>View my tickets</Text>
+        </Pressable>
+      </View>
     </View>
   );
 };
 
 export default WelcomingCard;
-
-const styles = StyleSheet.create({
-    card: {
-        backgroundColor: "#12ea9",
-        borderRadius: 10,
-        paddingVertical: 5,
-        marginVertical: 10,
-    },
-    sayingHi: {
-        color: "#2f0583",
-        textAlign: "center",
-        // backgroundColor: "#39e6b6",
-        marginVertical: 5
-    },
-    userFullName: {
-        fontSize: 25,
-        textAlign: "center",
-        fontWeight: "bold",
-        color: "#2f0583"
-    }
-});

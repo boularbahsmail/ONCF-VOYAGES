@@ -1,9 +1,15 @@
 import { StyleSheet, Image, View, Pressable, Text } from "react-native";
+import styles from "../../styles/Header.module.css";
 
-import user_avatar from "../../assets/user_avatar.jpg";
-import app_logo from "../../assets/al-boraq-logo.png"
+import user_avatar from "../../assets/images/user_avatar.jpg";
+import app_logo from "../../assets/images/al-boraq-logo.png";
 
-const Header = () => {
+const Header = ({ language, setLanguage }) => {
+  const switchLanguage = () => {
+    if (language != "FR") setLanguage("FR");
+    else setLanguage("EN");
+  };
+
   return (
     <View style={styles.header}>
       <View>
@@ -14,11 +20,16 @@ const Header = () => {
         />
       </View>
       <View>
-        <Image style={styles.appLogo} source={app_logo} alt="App-Logo" />
+        <Image style={specialStyle.appLogo} source={app_logo} alt="App-Logo" />
       </View>
       <View>
-        <Pressable style={styles.button}>
-          <Text style={styles.text}>EN</Text>
+        <Pressable
+          style={styles.switchLanguageButton}
+          onPress={() => {
+            switchLanguage();
+          }}
+        >
+          <Text style={styles.switchLanguageButtonText}>{language}</Text>
         </Pressable>
       </View>
     </View>
@@ -27,29 +38,10 @@ const Header = () => {
 
 export default Header;
 
-const styles = StyleSheet.create({
-  header: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-  userAvatar: {
-    width: 40,
-    height: 40,
-    borderRadius: 100,
-  },
+const specialStyle = StyleSheet.create({
   appLogo: {
     height: 50,
-    width: 100,
-  },
-  button: {
-    backgroundColor: "transparent",
-    paddingHorizontal: 10,
-  },
-  text: {
-    fontSize: 18,
-    fontWeight: "bold",
-    color: "#39e6b6",
+    width: 95,
+    tintColor: "white",
   },
 });
