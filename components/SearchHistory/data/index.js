@@ -8,7 +8,7 @@ const data = [
     {
         departure: "casa port",
         passengersLength: 1,
-        passengerClass: "1st",
+        passengerClass: "2nd",
         arrival: "kenitra"
     },
     {
@@ -20,7 +20,7 @@ const data = [
     {
         departure: "casa port",
         passengersLength: 1,
-        passengerClass: "1st",
+        passengerClass: "2nd",
         arrival: "kenitra"
     },
     {
@@ -32,7 +32,7 @@ const data = [
     {
         departure: "casa port",
         passengersLength: 1,
-        passengerClass: "1st",
+        passengerClass: "2nd",
         arrival: "kenitra"
     },
     {
@@ -44,7 +44,7 @@ const data = [
     {
         departure: "casa port",
         passengersLength: 1,
-        passengerClass: "1st",
+        passengerClass: "2nd",
         arrival: "kenitra"
     },
     {
@@ -56,7 +56,7 @@ const data = [
     {
         departure: "casa port",
         passengersLength: 1,
-        passengerClass: "1st",
+        passengerClass: "2nd",
         arrival: "kenitra"
     }
 ];

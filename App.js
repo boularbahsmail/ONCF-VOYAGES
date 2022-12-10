@@ -10,7 +10,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar />
       <Header />
-      <WelcomingCard language={language} />
+      <WelcomingCard />
       <SearchHistory />
     </View>
   );
