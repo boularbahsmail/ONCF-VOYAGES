@@ -81,7 +81,7 @@ const index = ({ modalVisible, setModalVisible }) => {
 
           <View style={styles.bottomButtons}>
             <Button style={styles.modifyButton}>
-              <Text style={styles.modifyButtonText}>I modify my profile</Text>
+              <Text style={styles.modifyButtonText}>Modify my profile</Text>
             </Button>
 
             <Button style={styles.disconnectButton}>

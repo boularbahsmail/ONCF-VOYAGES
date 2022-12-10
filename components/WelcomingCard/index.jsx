@@ -10,7 +10,7 @@ const WelcomingCard = () => {
       </View>
       <View style={styles.booking}>
         <Pressable style={styles.bookingButton}>
-          <Text style={styles.bookingButtonText}>I book a ticked</Text>
+          <Text style={styles.bookingButtonText}>Book a ticket</Text>
         </Pressable>
         <Pressable style={styles.viewTicketsButton}>
           <Text style={styles.viewTicketsButtonText}>View my tickets</Text>
