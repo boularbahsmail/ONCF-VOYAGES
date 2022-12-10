@@ -1,0 +1,31 @@
+.searchHistoryContainer {
+  background-color: #280673;
+  padding: 20px 0 10px 0;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.title {
+  color: white;
+  font-size: 23px;
+  font-weight: 550;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  min-height: 360px;
+  height: 360px;
+  width: 100%;
+}
+
+.wrapperScrollView {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 0 10px;
+}

@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "oncf-travels",
-    "slug": "oncf-travels",
+    "name": "ONCF Voyages",
+    "slug": "ONCF Voyages",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/al-boraq-logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FFFFFF"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,12 +22,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/images/al-boraq-logo.png",
+        "backgroundColor": "transparent"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/al-boraq-logo.png"
     },
     "packagerOpts": {
       "config": "metro.config.js",

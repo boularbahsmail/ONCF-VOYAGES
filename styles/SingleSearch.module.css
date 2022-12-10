@@ -1,0 +1,81 @@
+.singleSearch {
+  background-color: #2f0482;
+  padding: 16px 10px;
+  border-radius: 15px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 95px;
+  width: 100px;
+  padding: 0 10px;
+}
+
+.actionTitle {
+  font-size: 15px;
+  font-weight: 50;
+  color: #20d188;
+}
+
+.actionContent {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.passengers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.passengersLength {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 50;
+}
+
+.hrLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.line {
+  height: 1px;
+  max-width: 80px;
+  width: 80px;
+  background-color: #f23054;
+  margin: 12px 0;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: transparent;
+  border: 1px solid #f23054;
+  border-radius: 100px;
+}
+
+.passangerClass {
+  font-size: 14px;
+  color: #f23054;
+  font-weight: 50;
+}
