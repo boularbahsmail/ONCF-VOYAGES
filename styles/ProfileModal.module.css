@@ -2,6 +2,7 @@
   background-color: #2f0482;
   padding: 10px;
   flex: 1;
+  position: relative;
 }
 
 .modalHeader {
@@ -87,4 +88,28 @@
 .emailInputField {
   padding: 0 5px;
   margin-top: 25px;
+}
+
+.bottomButtons {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  right: 20px;
+}
+
+.modifyButton {
+  padding: 6px;
+  border-radius: 100px;
+  background-color: #43d993;
+  margin-bottom: 15px;
+}
+
+.modifyButtonText {
+  color: white;
+  font-size: 15px;
+}
+
+.disconnectButtonText {
+  color: #f23054;
+  font-size: 15px;
 }

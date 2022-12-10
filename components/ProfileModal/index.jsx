@@ -3,6 +3,7 @@ import styles from "../../styles/ProfileModal.module.css";
 
 import user_avatar from "../../assets/images/user_avatar.jpg";
 import MaterialIcon from "react-native-vector-icons/MaterialIcons";
+import { Button } from "react-native-paper";
 
 const index = ({ modalVisible, setModalVisible }) => {
   return (
@@ -79,10 +80,20 @@ const index = ({ modalVisible, setModalVisible }) => {
                 autoCorrect={false}
                 autoComplete="off"
                 placeholder="JohnDoe@gmail.com"
-                placeholderTextColor="lightgray" 
+                placeholderTextColor="lightgray"
                 defaultValue="boularbahismail01@gmail.com"
               />
             </View>
+          </View>
+
+          <View style={styles.bottomButtons}>
+            <Button style={styles.modifyButton}>
+              <Text style={styles.modifyButtonText}>I modify my profile</Text>
+            </Button>
+
+            <Button style={styles.disconnectButton}>
+              <Text style={styles.disconnectButtonText}>Disconnect</Text>
+            </Button>
           </View>
         </View>
       </Modal>
