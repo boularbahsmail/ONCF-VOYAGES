@@ -10,6 +10,7 @@
   width: 35px;
   height: 35px;
   border-radius: 100px;
+  border: 1px solid #280673;
 }
 
 .switchLanguageButton {
