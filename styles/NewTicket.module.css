@@ -1,0 +1,72 @@
+.centeredView {
+  background-color: #2f0482;
+  padding: 10px;
+  flex: 1;
+}
+
+.ticketsWrapper {
+  background-color: white;
+  padding: 10px 0;
+  padding-top: 0;
+  border-radius: 12px;
+  flex: 1;
+  margin: 10px 0;
+}
+
+.buyTypesButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f0482;
+}
+
+.active {
+  padding: 20px 0;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.activeText {
+  color: #2f0482;
+  font-weight: initial;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.ticketIcon {
+  transform: rotate(-45deg);
+}
+
+.inActive {
+  padding: 20px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 50%;
+  background-color: #2f0482;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inActiveText {
+  color: white;
+  font-weight: initial;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.cardtIcon {
+  color: white;
+}

@@ -7,22 +7,28 @@ import WelcomingCard from "./components/WelcomingCard";
 import SearchHistory from "./components/SearchHistory";
 
 // Profile Modal
-import ProfileModal from "./components/ProfileModal";
+import Profile from "./Modals/Profile";
+import NewTicket from "./Modals/NewTicket";
 
 export default function App() {
   const [modalVisible, setModalVisible] = useState(false);
+  const [newTicketVisible, setNewTicketVisible] = useState(false);
 
   return (
     <View style={styles.container}>
       <StatusBar />
       <View>
-        <ProfileModal
+        <Profile
           modalVisible={modalVisible}
           setModalVisible={setModalVisible}
         />
+        <NewTicket
+          newTicketVisible={newTicketVisible}
+          setNewTicketVisible={setNewTicketVisible}
+        />
       </View>
       <Header setModalVisible={setModalVisible} />
-      <WelcomingCard />
+      <WelcomingCard setNewTicketVisible={setNewTicketVisible} />
       <SearchHistory />
     </View>
   );

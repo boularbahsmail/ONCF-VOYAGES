@@ -3,10 +3,10 @@ import styles from "../../styles/ProfileModal.module.css";
 
 import user_avatar from "../../assets/images/user_avatar.jpg";
 import MaterialIcon from "react-native-vector-icons/MaterialIcons";
-import ModalHeader from "../ModalHeader";
+import ModalHeader from "../../components/ModalHeader";
 import { Button } from "react-native-paper";
 
-const index = ({ modalVisible, setModalVisible }) => {
+const Profile = ({ modalVisible, setModalVisible }) => {
   return (
     <View>
       <Modal
@@ -14,7 +14,6 @@ const index = ({ modalVisible, setModalVisible }) => {
         transparent={true}
         visible={modalVisible}
         onRequestClose={() => {
-          Alert.alert("Modal has been closed.");
           setModalVisible(!modalVisible);
         }}
       >
@@ -23,6 +22,9 @@ const index = ({ modalVisible, setModalVisible }) => {
             modalVisible={modalVisible}
             setModalVisible={setModalVisible}
             headerTitle="Profile"
+            
+            modalClosed={modalVisible}
+            setModalClosed={setModalVisible}
           />
 
           <View style={styles.userAvatar}>
@@ -94,4 +96,4 @@ const index = ({ modalVisible, setModalVisible }) => {
   );
 };
 
-export default index;
+export default Profile;

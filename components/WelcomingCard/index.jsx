@@ -1,7 +1,7 @@
 import { View, Text, Pressable } from "react-native";
 import styles from "../../styles/WelcomingCard.module.css";
 
-const WelcomingCard = () => {
+const WelcomingCard = ({ setNewTicketVisible }) => {
   return (
     <View style={styles.card}>
       <View>
@@ -9,7 +9,12 @@ const WelcomingCard = () => {
         <Text style={styles.userFullName}>Ismail Boularbah</Text>
       </View>
       <View style={styles.booking}>
-        <Pressable style={styles.bookingButton}>
+        <Pressable
+          style={styles.bookingButton}
+          onPress={() => {
+            setNewTicketVisible(true);
+          }}
+        >
           <Text style={styles.bookingButtonText}>Book a ticket</Text>
         </Pressable>
         <Pressable style={styles.viewTicketsButton}>
