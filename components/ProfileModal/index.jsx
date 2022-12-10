@@ -1,4 +1,4 @@
-import { View, Modal, Text, Pressable, Image } from "react-native";
+import { View, Modal, Text, Pressable, Image, TextInput } from "react-native";
 import styles from "../../styles/ProfileModal.module.css";
 
 import user_avatar from "../../assets/images/user_avatar.jpg";
@@ -22,7 +22,11 @@ const index = ({ modalVisible, setModalVisible }) => {
               style={styles.closeButton}
               onPress={() => setModalVisible(!modalVisible)}
             >
-              <MaterialIcon name="close" size={26} color="#FFFFFF"></MaterialIcon>
+              <MaterialIcon
+                name="close"
+                size={26}
+                color="#FFFFFF"
+              ></MaterialIcon>
             </Pressable>
             <Text style={styles.headerText}>Profile</Text>
           </View>
@@ -34,11 +38,46 @@ const index = ({ modalVisible, setModalVisible }) => {
               alt="User Avatar"
             />
             <Pressable style={styles.changeAvatarButton}>
-              <MaterialIcon name="camera-alt" size={26} color="#2f0482"></MaterialIcon>
+              <MaterialIcon
+                name="camera-alt"
+                size={26}
+                color="#2f0482"
+              ></MaterialIcon>
             </Pressable>
           </View>
 
-          <View></View>
+          <View style={styles.form}>
+            <View style={styles.field}>
+              <View style={styles.inputField}>
+                <Text style={styles.label}>First name</Text>
+                <TextInput
+                  style={styles.input}
+                  autoCorrect={false}
+                  placeholder="John"
+                  defaultValue="Ismail"
+                />
+              </View>
+              <View style={styles.inputField}>
+                <Text style={styles.label}>Last name</Text>
+                <TextInput
+                  style={styles.input}
+                  autoCorrect={false}
+                  placeholder="Doe"
+                  defaultValue="Boularbah"
+                />
+              </View>
+            </View>
+
+            <View style={styles.emailInputField}>
+              <Text style={styles.label}>My email</Text>
+              <TextInput
+                style={styles.input}
+                autoCorrect={false}
+                placeholder="JohnDoe@gmail.com"
+                defaultValue="boularbahismail01@gmail.com"
+              />
+            </View>
+          </View>
         </View>
       </Modal>
     </View>
