@@ -3,6 +3,7 @@ import styles from "../../styles/ProfileModal.module.css";
 
 import user_avatar from "../../assets/images/user_avatar.jpg";
 import MaterialIcon from "react-native-vector-icons/MaterialIcons";
+import ModalHeader from "../ModalHeader";
 import { Button } from "react-native-paper";
 
 const index = ({ modalVisible, setModalVisible }) => {
@@ -18,19 +19,11 @@ const index = ({ modalVisible, setModalVisible }) => {
         }}
       >
         <View style={styles.centeredView}>
-          <View style={styles.modalHeader}>
-            <Pressable
-              style={styles.closeButton}
-              onPress={() => setModalVisible(!modalVisible)}
-            >
-              <MaterialIcon
-                name="close"
-                size={26}
-                color="#FFFFFF"
-              ></MaterialIcon>
-            </Pressable>
-            <Text style={styles.headerText}>Profile</Text>
-          </View>
+          <ModalHeader
+            modalVisible={modalVisible}
+            setModalVisible={setModalVisible}
+            headerTitle="Profile"
+          />
 
           <View style={styles.userAvatar}>
             <Image
