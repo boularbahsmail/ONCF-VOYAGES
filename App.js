@@ -16,7 +16,10 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar />
       <View>
-        <ProfileModal modalVisible={modalVisible} setModalVisible={setModalVisible} />
+        <ProfileModal
+          modalVisible={modalVisible}
+          setModalVisible={setModalVisible}
+        />
       </View>
       <Header setModalVisible={setModalVisible} />
       <WelcomingCard />
