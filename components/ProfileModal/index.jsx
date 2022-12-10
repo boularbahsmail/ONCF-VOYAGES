@@ -2,9 +2,6 @@ import { View, Modal, Text, Pressable, Image } from "react-native";
 import styles from "../../styles/ProfileModal.module.css";
 
 import user_avatar from "../../assets/images/user_avatar.jpg";
-import closeIcon from "../../assets/icons/close-outline.png";
-import changeAvatar from "../../assets/icons/camera-outline.png";
-
 import MaterialIcon from "react-native-vector-icons/MaterialIcons";
 
 const index = ({ modalVisible, setModalVisible }) => {
@@ -40,6 +37,8 @@ const index = ({ modalVisible, setModalVisible }) => {
               <MaterialIcon name="camera-alt" size={26} color="#2f0482"></MaterialIcon>
             </Pressable>
           </View>
+
+          <View></View>
         </View>
       </Modal>
     </View>
