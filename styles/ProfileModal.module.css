@@ -69,14 +69,14 @@
 
 .label {
   color: #43d993;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 50;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .input {
   color: white;
-  font-size: 19px;
+  font-size: 18px;
   border: 1px solid #43d993;
   border-left-width: 0;
   border-right-width: 0;

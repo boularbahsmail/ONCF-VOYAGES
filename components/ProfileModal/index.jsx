@@ -53,7 +53,9 @@ const index = ({ modalVisible, setModalVisible }) => {
                 <TextInput
                   style={styles.input}
                   autoCorrect={false}
+                  autoComplete="off"
                   placeholder="John"
+                  placeholderTextColor="lightgray"
                   defaultValue="Ismail"
                 />
               </View>
@@ -62,7 +64,9 @@ const index = ({ modalVisible, setModalVisible }) => {
                 <TextInput
                   style={styles.input}
                   autoCorrect={false}
+                  autoComplete="off"
                   placeholder="Doe"
+                  placeholderTextColor="lightgray"
                   defaultValue="Boularbah"
                 />
               </View>
@@ -73,7 +77,9 @@ const index = ({ modalVisible, setModalVisible }) => {
               <TextInput
                 style={styles.input}
                 autoCorrect={false}
+                autoComplete="off"
                 placeholder="JohnDoe@gmail.com"
+                placeholderTextColor="lightgray" 
                 defaultValue="boularbahismail01@gmail.com"
               />
             </View>
