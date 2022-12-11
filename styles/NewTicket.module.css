@@ -123,3 +123,40 @@
 .dropdownLeftIcon {
   margin-right: 5px;
 }
+
+.dateTime {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dateContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  padding: 10px 0px;
+  border: 1px solid #2f0482;
+  border-radius: 100px;
+  /* margin-right: 5px; */
+}
+
+.dateContainerText, .timeContainerText {
+  font-size: 16px;
+  color: #2f0482;
+}
+
+.timeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  padding: 10px 0px;
+  border: 1px solid #2f0482;
+  border-radius: 100px;
+  /* margin-left: 5px; */
+}

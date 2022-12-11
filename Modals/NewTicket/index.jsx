@@ -7,6 +7,7 @@ import TicketButton from "./TicketButton";
 import CardButton from "./CardButton";
 import Departure from "./Departure";
 import Arrival from "./Arrival";
+import Date from "./Date";
 
 const NewTicket = ({ newTicketVisible, setNewTicketVisible }) => {
   const [cardSelected, setCardSelected] = useState(false);
@@ -42,8 +43,13 @@ const NewTicket = ({ newTicketVisible, setNewTicketVisible }) => {
           </View>
 
           <View style={styles.bookingForm}>
-            <Departure />
-            <Arrival />
+            {cardSelected == false ? (
+              <View>
+                <Departure />
+                <Arrival />
+                <Date />
+              </View>
+            ) : null}
           </View>
         </View>
       </View>
