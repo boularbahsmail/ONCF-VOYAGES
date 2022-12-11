@@ -135,10 +135,10 @@
 .dateContainer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 48%;
-  padding: 10px 0px;
+  padding: 10px;
   border: 1px solid #2f0482;
   border-radius: 100px;
   /* margin-right: 5px; */
@@ -149,14 +149,53 @@
   color: #2f0482;
 }
 
+.calendarIcon, .clockIcon {
+  margin-right: 5px;
+}
+
 .timeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #2f0482;
+  border-radius: 100px;
+  /* margin-left: 5px; */
+}
+
+.comfort {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 48%;
-  padding: 10px 0px;
+  margin-top: 15px;
+  padding: 0;
   border: 1px solid #2f0482;
   border-radius: 100px;
-  /* margin-left: 5px; */
+  overflow: hidden;
+}
+
+.comfortButton {
+  width: 100;
+  padding: 15px 0;
+}
+
+.comfortButtonText {
+  color: #2f0482;
+  font-size: 16px;
+  text-align: center;
+}
+
+.activeButton {
+  width: 100;
+  padding: 15px 0;
+  background-color: #2f0482;
+}
+
+.activeButtonText {
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
 }

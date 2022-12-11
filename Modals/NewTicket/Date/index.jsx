@@ -10,7 +10,7 @@ const Date = () => {
       <View style={styles.dateTime}>
         <Pressable style={styles.dateContainer}>
           <SimpleLineIcon
-            style={styles.dropdownLeftIcon}
+            style={styles.calendarIcon}
             name="calendar"
             size={20}
             color="#2f0482"
@@ -19,7 +19,7 @@ const Date = () => {
         </Pressable>
         <Pressable style={styles.timeContainer}>
           <SimpleLineIcon
-            style={styles.dropdownLeftIcon}
+            style={styles.clockIcon}
             name="clock"
             size={20}
             color="#2f0482"
