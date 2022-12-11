@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Pressable, Text, View } from "react-native";
 import styles from "../../../styles/NewTicket.module.css";
 
-import SimpleLineIcon from "react-native-vector-icons/SimpleLineIcons";
-
 const Comfort = () => {
   const [buttonActive, setButtonActive] = useState("2nd");
 
