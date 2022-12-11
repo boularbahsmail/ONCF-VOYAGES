@@ -16,6 +16,7 @@
     "react": "18.1.0",
     "react-native": "0.70.5",
     "react-native-css-transformer": "^1.2.4",
+    "react-native-element-dropdown": "^2.5.0",
     "react-native-paper": "^5.0.1",
     "react-native-vector-icons": "^9.2.0"
   },

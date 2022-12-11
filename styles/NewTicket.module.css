@@ -8,9 +8,9 @@
   background-color: white;
   padding: 10px 0;
   padding-top: 0;
-  border-radius: 12px;
+  border-radius: 15px;
   flex: 1;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 .buyTypesButtons {
@@ -23,7 +23,7 @@
 
 .active {
   padding: 20px 0;
-  border-radius: 10px;
+  border-radius: 15px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   width: 50%;
@@ -48,7 +48,7 @@
 
 .inActive {
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   width: 50%;
@@ -69,4 +69,57 @@
 
 .cardtIcon {
   color: white;
+}
+
+/* Empty Component */
+.emptyComponent {
+  padding: 16px;
+  align-items: center;
+}
+
+.container {
+  margin-top: 4px;
+  border-radius: 20px;
+  border: 1px solid #2f0482;
+  overflow: hidden;
+  color: red;
+}
+
+.textStyle {
+  color: #2f0482;
+  font-size: 14px;
+}
+
+.bookingForm {
+  padding: 0 20px;
+}
+
+.action {
+  margin-top: 25px;
+}
+
+.actionTitle {
+  color: #2f0482;
+  font-weight: initial;
+  font-size: 13px;
+}
+
+.stationsList {
+  background-color: white;
+  padding: 4px 15px;
+  border: 1px solid #2f0482;
+  border-radius: 100px;
+  margin-top: 15px;
+}
+
+.searchInput {
+  padding: 8px 20px;
+  border: 1px solid #2f0482;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.dropdownLeftIcon {
+  margin-right: 5px;
 }

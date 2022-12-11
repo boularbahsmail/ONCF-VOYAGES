@@ -5,6 +5,8 @@ import styles from "../../styles/NewTicket.module.css";
 
 import TicketButton from "./TicketButton";
 import CardButton from "./CardButton";
+import Departure from "./Departure";
+import Arrival from "./Arrival";
 
 const NewTicket = ({ newTicketVisible, setNewTicketVisible }) => {
   const [cardSelected, setCardSelected] = useState(false);
@@ -37,6 +39,11 @@ const NewTicket = ({ newTicketVisible, setNewTicketVisible }) => {
               cardSelected={cardSelected}
               setCardSelected={setCardSelected}
             />
+          </View>
+
+          <View style={styles.bookingForm}>
+            <Departure />
+            <Arrival />
           </View>
         </View>
       </View>
