@@ -10,6 +10,7 @@ import Arrival from "./Arrival";
 import Date from "./Date";
 import Comfort from "./Comfort";
 import Persons from "./Persons";
+import SearchButton from "./SearchButton";
 
 const NewTicket = ({ newTicketVisible, setNewTicketVisible }) => {
   const [cardSelected, setCardSelected] = useState(false);
@@ -52,6 +53,7 @@ const NewTicket = ({ newTicketVisible, setNewTicketVisible }) => {
                 <Date />
                 <Comfort />
                 <Persons />
+                <SearchButton />
               </View>
             ) : null}
           </View>
