@@ -47,10 +47,16 @@
 }
 
 .viewTicketsButton {
-  padding-top: 15;
+  background-color: #20d188;
+  padding: 10px;
+  border-radius: 100px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .viewTicketsButtonText {
   color: #2f0482;
+  text-align: center;
+  font-weight: 100;
   font-size: 17px;
 }
