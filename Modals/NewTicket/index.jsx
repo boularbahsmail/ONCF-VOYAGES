@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, Modal } from "react-native";
+import { View, Modal, ScrollView } from "react-native";
 import ModalHeader from "../../components/ModalHeader";
 import styles from "../../styles/NewTicket.module.css";
 
@@ -12,6 +12,8 @@ import Date from "./Date";
 import Comfort from "./Comfort";
 import Persons from "./Persons";
 import SearchButton from "./SearchButton";
+import CardsTypes from "./CardsTypes";
+import MembershipCode from "./MembershipCode";
 
 const NewTicket = ({ newTicketVisible, setNewTicketVisible }) => {
   const [cardSelected, setCardSelected] = useState(false);
@@ -54,9 +56,20 @@ const NewTicket = ({ newTicketVisible, setNewTicketVisible }) => {
                 <Date />
                 <Comfort />
                 <Persons />
-                <SearchButton />
+                <SearchButton isTicketSide={false} />
               </View>
-            ) : null}
+            ) : (
+              <ScrollView>
+                <CardsTypes />
+                <MembershipCode />
+                <Departure />
+                <Arrival />
+                <Date />
+                <Comfort />
+                <Persons />
+                <SearchButton isTicketSide={true} />
+              </ScrollView>
+            )}
           </View>
         </View>
       </View>
