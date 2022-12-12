@@ -1,0 +1,33 @@
+.myTicketsContainer {
+  background-color: #2f0482;
+  padding: 10px;
+  flex: 1;
+}
+
+.myTickets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.myTicketsText {
+    font-size: 18px;
+    color: #2f0482;
+    font-weight: initial;
+}
+
+.myTicketsButton {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #1cb978;
+    border-radius: 100px;
+}
+
+.myTicketsButtonText {
+    font-size: 17px;
+    color: white;
+}

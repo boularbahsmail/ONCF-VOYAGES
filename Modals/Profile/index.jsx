@@ -1,4 +1,11 @@
-import { View, Modal, Text, TouchableOpacity, Image, TextInput } from "react-native";
+import {
+  View,
+  Modal,
+  Text,
+  TouchableOpacity,
+  Image,
+  TextInput,
+} from "react-native";
 import styles from "../../styles/ProfileModal.module.css";
 
 import user_avatar from "../../assets/images/user_avatar.jpg";
@@ -22,7 +29,6 @@ const Profile = ({ modalVisible, setModalVisible }) => {
             modalVisible={modalVisible}
             setModalVisible={setModalVisible}
             headerTitle="Profile"
-            
             modalClosed={modalVisible}
             setModalClosed={setModalVisible}
           />
@@ -33,7 +39,10 @@ const Profile = ({ modalVisible, setModalVisible }) => {
               source={user_avatar}
               alt="User Avatar"
             />
-            <TouchableOpacity style={styles.changeAvatarButton} activeOpacity={0.8}>
+            <TouchableOpacity
+              style={styles.changeAvatarButton}
+              activeOpacity={0.8}
+            >
               <MaterialIcon
                 name="camera-alt"
                 size={26}
@@ -86,7 +95,10 @@ const Profile = ({ modalVisible, setModalVisible }) => {
               <Text style={styles.modifyButtonText}>Modify my profile</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.disconnectButton} activeOpacity={0.8}>
+            <TouchableOpacity
+              style={styles.disconnectButton}
+              activeOpacity={0.8}
+            >
               <Text style={styles.disconnectButtonText}>Disconnect</Text>
             </TouchableOpacity>
           </View>

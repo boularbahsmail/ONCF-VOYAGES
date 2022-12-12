@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import styles from "../../styles/WelcomingCard.module.css";
 
-const WelcomingCard = ({ setNewTicketVisible }) => {
+const WelcomingCard = ({ setNewTicketVisible, setMyTicketsVisible }) => {
   return (
     <View style={styles.card}>
       <View>
@@ -18,7 +18,13 @@ const WelcomingCard = ({ setNewTicketVisible }) => {
         >
           <Text style={styles.bookingButtonText}>Book a ticket</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.viewTicketsButton} activeOpacity={0.8}>
+        <TouchableOpacity
+          style={styles.viewTicketsButton}
+          activeOpacity={0.8}
+          onPress={() => {
+            setMyTicketsVisible(true);
+          }}
+        >
           <Text style={styles.viewTicketsButtonText}>View my tickets</Text>
         </TouchableOpacity>
       </View>
