@@ -2,6 +2,7 @@
   background-color: #2f0482;
   padding: 10px;
   flex: 1;
+  position: relative;
 }
 
 .modalHeader {
@@ -92,6 +93,11 @@
 .bottomButtons {
   margin: 0 15px;
   margin-top: 180px;
+  position: absolute;
+  /* width: 100%; */
+  bottom: 20px;
+  left: 10px;
+  right: 10px;
 }
 
 .modifyButton {
