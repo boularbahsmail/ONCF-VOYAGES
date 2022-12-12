@@ -2,7 +2,11 @@ import { Text, TouchableOpacity, View, Modal } from "react-native";
 import ModalHeader from "../../components/ModalHeader";
 import styles from "../../styles/MyTickets.module.css";
 
-const index = ({ myTicketsVisible, setMyTicketsVisible }) => {
+const index = ({
+  myTicketsVisible,
+  setMyTicketsVisible,
+  setNewTicketVisible,
+}) => {
   return (
     <Modal
       animationType="slide"
@@ -24,7 +28,14 @@ const index = ({ myTicketsVisible, setMyTicketsVisible }) => {
           <Text style={styles.myTicketsText}>
             You don{"'"}t have tickets at the moment
           </Text>
-          <TouchableOpacity style={styles.myTicketsButton} activeOpacity={0.8}>
+          <TouchableOpacity
+            style={styles.myTicketsButton}
+            activeOpacity={0.8}
+            onPress={() => {
+              setMyTicketsVisible(false);
+              setNewTicketVisible(true);
+            }}
+          >
             <Text style={styles.myTicketsButtonText}>Buy Ticket</Text>
           </TouchableOpacity>
         </View>

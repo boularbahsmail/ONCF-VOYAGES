@@ -31,6 +31,7 @@ export default function App() {
         <MyTickets
           myTicketsVisible={myTicketsVisible}
           setMyTicketsVisible={setMyTicketsVisible}
+          setNewTicketVisible={setNewTicketVisible}
         />
       </View>
       <Header setModalVisible={setModalVisible} />
