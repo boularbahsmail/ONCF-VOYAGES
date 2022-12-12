@@ -95,7 +95,7 @@
 }
 
 .modifyButton {
-  padding: 5px 10px;
+  padding: 12px;
   border-radius: 100px;
   background-color: #43d993;
   margin-bottom: 15px;
@@ -103,11 +103,13 @@
 
 .modifyButtonText {
   color: white;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: bold;
   text-align: center;
 }
 
 .disconnectButtonText {
+  padding: 12px;
   color: #f23054;
   font-size: 15px;
   text-align: center;

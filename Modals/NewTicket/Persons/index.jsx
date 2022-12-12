@@ -1,4 +1,4 @@
-import { Pressable, Text, View } from "react-native";
+import { Pressable, Text, View, TouchableOpacity } from "react-native";
 import styles from "../../../styles/NewTicket.module.css";
 
 import AntDesignIcon from "react-native-vector-icons/AntDesign";
@@ -28,11 +28,12 @@ const Persons = () => {
       <View style={styles.personsAction}>
         <Text style={styles.actionTitle}>Adult(s) {">"} 15 ans</Text>
         <View style={styles.actionContent}>
-          <Pressable
+          <TouchableOpacity
             style={styles.decrase}
             onPress={() => {
               decraseAdults();
             }}
+            activeOpacity={0.5}
           >
             <AntDesignIcon
               style={styles.customButtonIcon}
@@ -40,13 +41,15 @@ const Persons = () => {
               size={15}
               color="#2f0482"
             />
-          </Pressable>
+          </TouchableOpacity>
           <Text style={styles.personsLength}>{adultsLength}</Text>
-          <Pressable
+          <TouchableOpacity
             style={styles.increase}
             onPress={() => {
               increaseAdults();
             }}
+            
+            activeOpacity={0.5}
           >
             <AntDesignIcon
               style={styles.customButtonIcon}
@@ -54,17 +57,18 @@ const Persons = () => {
               size={15}
               color="#2f0482"
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
       </View>
       <View style={styles.personsAction}>
         <Text style={styles.actionTitle}>Child(ren) {"<"} 15 ans</Text>
         <View style={styles.actionContent}>
-          <Pressable
+          <TouchableOpacity
             style={styles.decrase}
             onPress={() => {
               decraseChildren();
             }}
+            activeOpacity={0.5}
           >
             <AntDesignIcon
               style={styles.customButtonIcon}
@@ -72,13 +76,14 @@ const Persons = () => {
               size={15}
               color="#2f0482"
             />
-          </Pressable>
+          </TouchableOpacity>
           <Text style={styles.personsLength}>{childrenLength}</Text>
-          <Pressable
+          <TouchableOpacity
             style={styles.increase}
             onPress={() => {
               increaseChildren();
             }}
+            activeOpacity={0.5}
           >
             <AntDesignIcon
               style={styles.customButtonIcon}
@@ -86,7 +91,7 @@ const Persons = () => {
               size={15}
               color="#2f0482"
             />
-          </Pressable>
+          </TouchableOpacity>
         </View>
       </View>
     </View>

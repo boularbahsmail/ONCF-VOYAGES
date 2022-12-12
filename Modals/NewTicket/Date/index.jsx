@@ -1,4 +1,4 @@
-import { Pressable, Text, View } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
 import styles from "../../../styles/NewTicket.module.css";
 
 import SimpleLineIcon from "react-native-vector-icons/SimpleLineIcons";
@@ -8,7 +8,7 @@ const Date = () => {
     <View style={styles.action}>
       <Text style={styles.actionTitle}>My departure date</Text>
       <View style={styles.dateTime}>
-        <Pressable style={styles.dateContainer}>
+        <TouchableOpacity style={styles.dateContainer} activeOpacity={0.5}>
           <SimpleLineIcon
             style={styles.calendarIcon}
             name="calendar"
@@ -16,8 +16,8 @@ const Date = () => {
             color="#2f0482"
           />
           <Text style={styles.dateContainerText}>10-12-2022</Text>
-        </Pressable>
-        <Pressable style={styles.timeContainer}>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.timeContainer} activeOpacity={0.5}>
           <SimpleLineIcon
             style={styles.clockIcon}
             name="clock"
@@ -25,7 +25,7 @@ const Date = () => {
             color="#2f0482"
           />
           <Text style={styles.timeContainerText}>Morning</Text>
-        </Pressable>
+        </TouchableOpacity>
       </View>
     </View>
   );

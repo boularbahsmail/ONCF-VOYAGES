@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Pressable, Text, View } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
 import styles from "../../../styles/NewTicket.module.css";
 
 const Comfort = () => {
@@ -9,13 +9,14 @@ const Comfort = () => {
     <View style={styles.action}>
       <Text style={styles.actionTitle}>My comfort</Text>
       <View style={styles.comfort}>
-        <Pressable
+        <TouchableOpacity
           onPress={() => {
             setButtonActive("1st");
           }}
           style={
             buttonActive == "1st" ? styles.activeButton : styles.comfortButton
           }
+          activeOpacity={0.8}
         >
           <Text
             style={
@@ -26,14 +27,15 @@ const Comfort = () => {
           >
             1st class
           </Text>
-        </Pressable>
-        <Pressable
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => {
             setButtonActive("2nd");
           }}
           style={
             buttonActive == "2nd" ? styles.activeButton : styles.comfortButton
           }
+          activeOpacity={0.8}
         >
           <Text
             style={
@@ -44,8 +46,8 @@ const Comfort = () => {
           >
             2nd class
           </Text>
-        </Pressable>
-        <Pressable
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => {
             setButtonActive("singleBed");
           }}
@@ -54,6 +56,7 @@ const Comfort = () => {
               ? styles.activeButton
               : styles.comfortButton
           }
+          activeOpacity={0.8}
         >
           <Text
             style={
@@ -64,7 +67,7 @@ const Comfort = () => {
           >
             Single bed
           </Text>
-        </Pressable>
+        </TouchableOpacity>
       </View>
     </View>
   );

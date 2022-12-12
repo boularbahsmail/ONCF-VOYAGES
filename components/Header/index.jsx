@@ -1,4 +1,4 @@
-import { StyleSheet, Image, View, Pressable, Text, Modal } from "react-native";
+import { StyleSheet, Image, View, Text, TouchableOpacity } from "react-native";
 import styles from "../../styles/Header.module.css";
 
 import user_avatar from "../../assets/images/user_avatar.jpg";
@@ -8,25 +8,29 @@ const Header = ({ setModalVisible }) => {
   return (
     <View style={styles.header}>
       <View>
-        <Pressable
+        <TouchableOpacity
           onPress={() => {
             setModalVisible(true);
           }}
+          activeOpacity={0.8}
         >
           <Image
             style={styles.userAvatar}
             source={user_avatar}
             alt="User-Avatar"
           />
-        </Pressable>
+        </TouchableOpacity>
       </View>
       <View>
         <Image style={specialStyle.appLogo} source={app_logo} alt="App-Logo" />
       </View>
       <View>
-        <Pressable style={styles.switchLanguageButton}>
+        <TouchableOpacity
+          style={styles.switchLanguageButton}
+          activeOpacity={0.8}
+        >
           <Text style={styles.switchLanguageButtonText}>EN</Text>
-        </Pressable>
+        </TouchableOpacity>
       </View>
     </View>
   );

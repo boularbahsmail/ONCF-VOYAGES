@@ -1,4 +1,4 @@
-import { View, Text, Pressable } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import styles from "../../styles/ProfileModal.module.css";
 
 import MaterialIcon from "react-native-vector-icons/MaterialIcons";
@@ -6,12 +6,13 @@ import MaterialIcon from "react-native-vector-icons/MaterialIcons";
 const ModalHeader = ({ modalClosed, setModalClosed, headerTitle }) => {
   return (
     <View style={styles.modalHeader}>
-      <Pressable
+      <TouchableOpacity
         style={styles.closeButton}
         onPress={() => setModalClosed(!modalClosed)}
+        activeOpacity={0.5}
       >
         <MaterialIcon name="close" size={26} color="#FFFFFF"></MaterialIcon>
-      </Pressable>
+      </TouchableOpacity>
       <Text style={styles.headerText}>{headerTitle}</Text>
     </View>
   );
