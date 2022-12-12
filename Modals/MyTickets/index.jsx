@@ -36,7 +36,7 @@ const index = ({
               setNewTicketVisible(true);
             }}
           >
-            <Text style={styles.myTicketsButtonText}>Buy Ticket</Text>
+            <Text style={styles.myTicketsButtonText}>Buy ticket</Text>
           </TouchableOpacity>
         </View>
       </View>
