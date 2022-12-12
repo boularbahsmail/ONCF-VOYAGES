@@ -12,12 +12,14 @@
   background-color: #ffffff;
   border-radius: 20px;
   margin-top: 10px;
+  padding: 0 40px;
 }
 
 .myTicketsText {
     font-size: 18px;
     color: #2f0482;
-    font-weight: initial;
+    text-align: center;
+    font-family: "Montserrat_600SemiBold";
 }
 
 .myTicketsButton {
@@ -30,4 +32,5 @@
 .myTicketsButtonText {
     font-size: 17px;
     color: white;
+    font-family: "Montserrat_700Bold";
 }

@@ -27,14 +27,15 @@
   font-size: 15px;
   font-weight: 50;
   color: #20d188;
+  font-family: "Montserrat_600SemiBold";
 }
 
 .actionContent {
   color: #ffffff;
   font-size: 16px;
   margin-top: 5px;
-  font-weight: bold;
   text-transform: uppercase;
+  font-family: "Montserrat_800ExtraBold";
 }
 
 .passengers {
@@ -47,7 +48,7 @@
 .passengersLength {
   font-size: 15px;
   color: #ffffff;
-  font-weight: 50;
+  font-family: "Montserrat_500Medium";
 }
 
 .hrLine {
@@ -77,5 +78,5 @@
 .passangerClass {
   font-size: 14px;
   color: #f23054;
-  font-weight: 50;
+  font-family: "Montserrat_500Medium";
 }

@@ -16,7 +16,7 @@
 .switchLanguageButton {
   background-color: transparent;
   padding: 0 10px;
-  width: 40px;
+  width: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +24,6 @@
 
 .switchLanguageButtonText {
   font-size: 18px;
-  font-weight: bold;
   color: #4fdaa9;
+  font-family: "Montserrat_800ExtraBold";
 }

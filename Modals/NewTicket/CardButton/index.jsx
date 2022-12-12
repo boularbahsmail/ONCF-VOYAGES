@@ -20,7 +20,7 @@ const CardButton = ({ cardSelected, setCardSelected }) => {
       <Text
         style={cardSelected == true ? styles.activeText : styles.inActiveText}
       >
-        Reserve with card
+        Reserve with my card
       </Text>
     </Pressable>
   );

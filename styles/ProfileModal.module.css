@@ -23,7 +23,7 @@
 .headerText {
   color: white;
   font-size: 22px;
-  font-weight: bold;
+  font-family: "Montserrat_700Bold";
 }
 
 .userAvatar {
@@ -70,9 +70,9 @@
 
 .label {
   color: #43d993;
-  font-size: 12px;
-  font-weight: 50;
+  font-size: 14px;
   margin-bottom: 2px;
+  font-family: "Montserrat_700Bold";
 }
 
 .input {
@@ -83,6 +83,7 @@
   border-right-width: 0;
   border-top-width: 0;
   padding-bottom: 6px;
+  font-family: "Montserrat_600SemiBold";
 }
 
 .emailInputField {
@@ -91,17 +92,13 @@
 }
 
 .bottomButtons {
-  margin: 0 15px;
+  width: 90%;
+  margin: auto;
   margin-top: 180px;
-  position: absolute;
-  /* width: 100%; */
-  bottom: 20px;
-  left: 10px;
-  right: 10px;
 }
 
 .modifyButton {
-  padding: 12px;
+  padding: 14px;
   border-radius: 100px;
   background-color: #43d993;
   margin-bottom: 15px;
@@ -110,8 +107,8 @@
 .modifyButtonText {
   color: white;
   font-size: 16px;
-  font-weight: bold;
   text-align: center;
+  font-family: "Montserrat_700Bold";
 }
 
 .disconnectButtonText {
@@ -119,4 +116,5 @@
   color: #f23054;
   font-size: 15px;
   text-align: center;
+  font-family: "Montserrat_700Bold";
 }
